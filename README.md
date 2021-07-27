@@ -37,3 +37,21 @@ Now add the following script on you html file
 ```
 
 That's it. Your component is ready to go. 
+
+
+## How to run the project
+This is very lite html project created using vitejs.
+
+### Download and install dependency 
+```
+git clone git@github.com:nazmuldipu/DayPicker.git
+
+cd DayPicker
+
+npm install
+```
+
+### Run the project
+```
+npm run dev
+```
