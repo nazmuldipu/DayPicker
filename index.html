@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title>DayPicker</title>
+    <meta name="author" content="Nazmul Alam" />
+    <link rel="stylesheet" href="css/daypicker.css" />
+  </head>
+  <body>
+    <h1>DayPicker</h1>
+
+    <p class="large">
+      JavaScript DayPicker — lightweight, no dependencies, modular CSS.
+    </p>
+
+    <label for="datepicker">Date:</label>
+    <br />
+    <input type="text" id="datepicker" autocomplete="off" />
+
+    <p>
+      During an outbreak of Yellow Fever in Brazil in 2018, there was a global
+      shortage of vaccines. In the face of those limitations and the virus’s
+      rapid spread, health officials in Brazil decided to administer fractional
+      dosing. They gave people one-fifth of the normal dose.
+    </p>
+    <p>
+      It was impossible to isolate what activated Duke’s metamorphosis. Today,
+      more than four decades after meeting the Wiz, and with years of having
+      covered some of the worst global atrocities known to humanity, my
+      encounter with Duke continues to trigger terror dreams forged in fact.
+    </p>
+
+    <p>
+      A selection of Ku Klux Klan robes and hoods in various colours hang on a
+      coat rack. Grand wizard David Duke’s ground-floor office is across the
+      street from an integrated primary school. Duke grabs an unloaded rifle and
+      sticks it out an open window. “Bang-Bang,” he shouts, pointing the weapon
+      towards a group of Black children outside for recess.
+    </p>
+    <p>
+      Satan recently made a cameo appearance on France’s most watched evening
+      news programme. He popped up to spit enthusiasm on January’s attempted
+      coup d’état in America and stimulate the Big Lie that the results of the
+      2020 US Presidential Election were illegal.
+    </p>
+    <label for="dp">Date:</label>
+    <br />
+    <input type="text" id="dp" autocomplete="off" />
+
+    <p>
+      The on-screen demon’s legal name was David Ernest Duke, a 71-year-old
+      self-described white nationalist, anti-Semitic, anti-Muslim conspiracy
+      theorist, convicted felon, and hierophant of twice impeached former
+      President Donald J. Trump.
+    </p>
+    <p>
+      America best knows Duke as the erstwhile grand wizard of the Knights of
+      the Ku Klux Klan, America’s oldest white supremacist terrorist hate group
+      and star of director D.W. Griffith’s 1915 silent movie “Birth of a
+      Nation”.
+    </p>
+
+    <p>
+      Some Americans venerate Duke as their champion. Last week, for instance,
+      the Texas Senate voted to eliminate a requirement that public schools in
+      America’s second-largest state teach that the Ku Klux Klan and its white
+      supremacist campaigns of terror are “morally wrong”. Others scorn him as a
+      mostly forgotten elder statesman of racism. Facebook banned him in 2018.
+      Twitter in 2020 cut his feed to 53,000 followers for “hateful conduct”.
+    </p>
+
+    <p>
+      Duke remains a ghoulish thread in the nation’s fabric, lingering proof
+      that there’s no longer anything in America too monstrous for human
+      credibility.
+    </p>
+
+    <p>
+      I can guarantee Duke meets that pitiless definition because the New York
+      Daily News, where I covered crimes in New York City to civil wars in Latin
+      America, in 1978 sent me to meet him in Jefferson Parish, Louisiana, and
+      return with a detailed story about how this child of the peace, love and
+      brown rice 1960s somehow missed Woodstock and was transformed into a
+      professional racist. The conventional wisdom at the time assured us that
+      America’s Baby Boomer generation – those, like Duke, born between 1946 and
+      1964 – of conservative and liberal political superstars was more
+      enlightened. Duke was an exotic mutation who could not endure.
+    </p>
+
+    <script src="daypicker.js"></script>
+    <script>
+      var picker = new DayPicker({
+        field: document.getElementById("datepicker"),
+        format: "DD/MMM/YYYY",
+        onSelect: function () {
+          // console.log(this.getMoment().format('Do MMMM YYYY'));
+        },
+      });
+
+      var dp = new DayPicker({
+        field: document.getElementById("dp"),
+        format: "yyyy-MM-dd",
+        onSelect: function () {
+          // console.log(this.getMoment().format('Do MMMM YYYY'));
+        },
+      });
+    </script>
+  </body>
+</html>
